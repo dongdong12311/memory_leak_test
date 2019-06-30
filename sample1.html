@@ -1,0 +1,45 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><xmp>&lt;tracey/tracey.cpp&gt; says: generated with tracey-1.0.0 (https://github.com/r-lyeh/tracey)
+&lt;tracey/tracey.cpp&gt; says: best viewed on foldable text editor (like SublimeText2) with tabs=2sp and no word-wrap
+&lt;tracey/tracey.cpp&gt; says: error, 3 leaks found; 1684 bytes wasted ('lame' score)
+&lt;tracey/tracey.cpp&gt; says: summary: highest peak: 1680 bytes total, 1600 bytes greatest peak // 0 allocs in use: 1616 bytes + overhead: 17179869183 GB = total: 1488 bytes
+&lt;tracey/tracey.cpp&gt; says: report filename: /tmp/filenb3JEbxxx-tracey.html
+[2] (100% .. 1684 bytes) begin
+	[1] (100% .. 1684 bytes) ./sample1.out() [0x4052e9]
+		[2] (099% .. 1680 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fa909afe830]
+			[2] (095% .. 1600 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:9
+				[1] (095% .. 1600 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3727
+					[1] (095% .. 1600 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3560
+						[1] (095% .. 1600 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3535
+							[1] (095% .. 1600 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:1557
+			[2] (004% .. 80 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:8
+				[1] (004% .. 80 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3727
+					[1] (004% .. 80 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3560
+						[1] (004% .. 80 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3535
+							[1] (004% .. 80 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:1557
+		[2] (000% .. 4 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x7f) [0x7fa909afe7bf]
+			[1] (000% .. 4 bytes) ./sample1.out() [0x437bcd]
+				[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:9
+					[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:4
+						[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3723
+							[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3560
+								[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3535
+									[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:1557
+[2] (100% .. 1684 bytes) end
+	[1] (100% .. 1684 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:1557
+		[1] (100% .. 1684 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3535
+			[1] (100% .. 1684 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3560
+				[2] (099% .. 1680 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3727
+					[2] (095% .. 1600 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:9
+						[1] (095% .. 1600 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fa909afe830]
+							[1] (095% .. 1600 bytes) ./sample1.out() [0x4052e9]
+					[2] (004% .. 80 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:8
+						[1] (004% .. 80 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fa909afe830]
+							[1] (004% .. 80 bytes) ./sample1.out() [0x4052e9]
+				[2] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3723
+					[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:4
+						[1] (000% .. 4 bytes) /home/dongdong/memory_leak_detect/tracey/sample1.cc:9
+							[1] (000% .. 4 bytes) ./sample1.out() [0x437bcd]
+								[1] (000% .. 4 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x7f) [0x7fa909afe7bf]
+									[1] (000% .. 4 bytes) ./sample1.out() [0x4052e9]
+</xmp></body></html>

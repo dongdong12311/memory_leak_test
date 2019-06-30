@@ -1,0 +1,23 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><xmp>&lt;tracey/tracey.cpp&gt; says: generated with tracey-1.0.0 (https://github.com/r-lyeh/tracey)
+&lt;tracey/tracey.cpp&gt; says: best viewed on foldable text editor (like SublimeText2) with tabs=2sp and no word-wrap
+&lt;tracey/tracey.cpp&gt; says: error, 1 leaks found; 128 bytes wasted ('mediocre' score)
+&lt;tracey/tracey.cpp&gt; says: summary: highest peak: 1280 bytes total, 128 bytes greatest peak // 1 allocs in use: 128 bytes + overhead: 80 bytes = total: 208 bytes
+&lt;tracey/tracey.cpp&gt; says: report filename: /tmp/filesPBZu0xxx-tracey.html
+[2] (100% .. 128 bytes) begin
+	[1] (100% .. 128 bytes) ./sample2.out() [0x405379]
+		[1] (100% .. 128 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fee5c096830]
+			[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/sample2.cc:13
+				[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3727
+					[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3560
+						[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3535
+							[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:1557
+[2] (100% .. 128 bytes) end
+	[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:1557
+		[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3535
+			[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3560
+				[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/tracey.cpp:3727
+					[1] (100% .. 128 bytes) /home/dongdong/memory_leak_detect/tracey/sample2.cc:13
+						[1] (100% .. 128 bytes) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7fee5c096830]
+							[1] (100% .. 128 bytes) ./sample2.out() [0x405379]
+</xmp></body></html>
